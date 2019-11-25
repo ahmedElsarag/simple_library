@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b2"
+    android:padding="8dp"
+    tools:context=".database">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="library handler"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/layshape"
+        android:textColor="@color/colorPrimaryDark"
+        android:elevation="2dp"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:elevation="2dp"
+        android:background="@drawable/layshape"
+        android:layout_marginBottom="15dp">
+        <EditText
+            android:id="@+id/gettitle_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext"
+            android:hint="title" />
+
+        <EditText
+            android:id="@+id/getdesc_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edittext"
+            android:hint="description" />
+
+        <EditText
+            android:id="@+id/getimg_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext"
+            android:hint="img source" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addBook"
+            android:background="@drawable/bg"
+            android:layout_marginBottom="12dp"
+            android:text="add" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Library"
+            android:background="@drawable/bg"
+            android:text="show library" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:background="@drawable/layshape"
+        android:gravity="center"
+        android:elevation="2dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/getId_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/edittext"
+            android:hint=" ID only use this to update and delete" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="updateData"
+            android:background="@drawable/bg"
+            android:layout_marginBottom="12dp"
+            android:text="update" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deleteData"
+            android:background="@drawable/bg"
+            android:text="delete" />
+    </LinearLayout>
+
+</LinearLayout>
